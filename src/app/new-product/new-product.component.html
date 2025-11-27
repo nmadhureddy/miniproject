@@ -1,0 +1,20 @@
+<h1>{{id ? 'edit product' :'new product'}}</h1>
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+    <label for="">Name</label>
+    <input type="text" placeholder="enter product name" formControlName="name"> <br>
+    <label for="">Description</label>
+    <input type="text" placeholder="enter description" formControlName="description"><br>
+    <label for="">Category</label>
+    <input type="text" placeholder="enter category" formControlName="category"><br>
+    <label for="">imageUrl</label>
+    <input type="text" placeholder="enter imageurl" formControlName="imageUrl"><br>
+    <label for="">price</label>
+    <input type="text" placeholder="enter product price" formControlName="price"><br>
+    <label for="">discountPrice</label>
+    <input type="text" placeholder="enter discountprice" formControlName="discountPrice"><br>
+    <label for="">rating</label>
+    <input type="text" placeholder="enter rating" formControlName="rating"><br>
+    <label for="">stock</label>
+    <input type="text" placeholder="stock" formControlName="stock"> <br>
+    <button type="submit">Create new product</button>
+</form>

@@ -1,0 +1,49 @@
+<div class="nav">
+  <i class="bi bi-gear" id="admin">Admin Panel</i>
+  <i class="bi bi-shop" id="view" routerLink="/product">View store</i>
+  <i class="bi bi-box-arrow-in-right" id="logout" (click)="logout()">logout</i>
+</div>
+<div class="t1">
+  <i class="bi bi-box-seam">Product Management</i>
+  <button class="btn-primary" routerLink="/newproduct">+Add Product</button>
+</div>
+<table class="table table-border table-striped">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Stock</th>
+      <th>Rating</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td><img [src]="product.imageUrl" width="80" height="80"></td>
+
+      <td>{{ product.name }}</td>
+
+      <td>{{ product.category }}</td>
+
+      <td>
+        ₹{{ product.price }}
+        <span *ngIf="product.discountPrice">
+          (Discount: ₹{{ product.discountPrice }})
+        </span>
+      </td>
+
+      <td>{{ product.stock }}</td>
+
+      <td>{{ product.rating }}</td>
+
+      <td>
+       <button [routerLink]="['/editproduct', product._id]">Edit</button>
+
+        <button (click)="deleteproduct(product._id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

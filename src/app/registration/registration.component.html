@@ -1,0 +1,22 @@
+<div class="nav">
+<i class="bi bi-shop">ShopEase</i>
+</div>
+<div class="bottom">
+    <form [formGroup]="registrationForm" (ngSubmit)="submit()">
+        <i class="bi bi-person-plus" id="log"> Sign Up</i>
+        <label for="">Full Name</label> <br>
+        <input type="text" placeholder="Enter your full name" formControlName="name">  <br>
+        <label for="">Email</label> <br> 
+        <input type="email" placeholder="Enter your email" formControlName="email">  <br>
+        <label for="">Mobile Number</label> <br>
+        <input type="tel" placeholder="Enter your 10 digit number" formControlName="mobile">  <br>
+        <label for="">Password</label> <br>
+        <input type="password" placeholder="Enter your password"formControlName="password" >  <br>
+        <label for="">Confirm Password</label> <br>
+        <input type="password" placeholder="Confirm your password" formControlName="confirmPassword">  <br>
+        <input class="a1" type="checkbox">I agree to the Terms and condidtions <br>
+        <button type="submit"><i class="bi bi-person-plus"> Sign Up</i></button>
+
+
+    </form>
+</div>

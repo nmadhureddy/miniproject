@@ -1,0 +1,54 @@
+.nav{
+    width: 100%;
+    height: 10%;
+    color: white;
+    background-color: blue;
+    display: flex;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+}
+i{
+    margin-left: 50px;
+    font-weight: 500;
+}
+.a1{
+    margin: -40%;
+
+}
+.bottom{
+    width: 40%;
+    height: 75%;
+    margin-left: 30%;
+    margin-top: 30px;
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+#log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size:30px;
+    font-weight: 600;
+}
+
+label{
+    margin: 5px;
+    margin-left: 20px;
+}
+input{
+    margin:5px;
+    margin-left:20px ;
+    width: 90%;
+    border-radius: 5px;
+}
+
+button{
+    margin: 10px;
+    width: 90%;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}

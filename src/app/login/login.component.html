@@ -1,0 +1,18 @@
+<div class="nav">
+<i class="bi bi-shop">ShopEase</i>
+</div>
+<div class="bottom">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <i class="bi bi-box-arrow-in-right" id="log"> Login</i>
+    <label for="">Email or Mobile</label> <br>
+    <input class="input" type="text" placeholder="enter email or mobile number" formControlName="emailOrMobile"> <br>
+     <label for="">Password</label> <br>
+    <input class="input" type="password" placeholder="enter password" formControlName="password"> 
+    <input type="checkbox">remember me
+    <a href="" class="a1">forgot password?</a> <br>
+    <button type="submit"><i class="bi bi-box-arrow-in-right">Login</i></button> <br> <hr>
+    <p>Don't have annaccount? <a href="" routerLink="/registration">sign up</a></p>
+    
+
+</form>
+</div>
