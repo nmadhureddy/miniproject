@@ -7,6 +7,7 @@ import { NewProductComponent } from './new-product/new-product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AdmiComponent } from './admi/admi.component';
 import { AuthGuard } from './auth.guard';
+import { ButtonComponent } from './button/button.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
 
   {path:'productdetails/:id',component:ProductDetailsComponent,canActivate:[AuthGuard]},
   {path:'admin',component:AdmiComponent,canActivate:[AuthGuard]},
+  {path:'button',component:ButtonComponent},
   {path:"",component:LoginComponent},
 ];
 
