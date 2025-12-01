@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewProductComponent } from './new-product/new-product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { AdmiComponent } from './admi/admi.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdmiComponent } from './admi/admi.component';
     ProductComponent,
     NewProductComponent,
     ProductDetailsComponent,
-    AdmiComponent
+    AdmiComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
